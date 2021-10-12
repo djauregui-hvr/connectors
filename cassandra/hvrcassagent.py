@@ -1,12 +1,12 @@
 #!python
 
 
-# HVR 5.7.5/6 (linux_glibc2.12-x64-64bit) hvrcassagent.py@22733 2018-07-06
-# Copyright (c) 2000-2016 HVR Software bv
+# HVR 5.7.5/15 (windows-x64-64bit) hvrcassagent.py@22733 2018-07-06
+# Copyright (c) 2000-2021 HVR Software bv
 
 ################################################################################
 #
-#     HVR 5.7.5/6 (linux_glibc2.12-x64-64bit)
+#     HVR 5.7.5/15 (windows-x64-64bit)
 #     Copyright (c) 2000-2021 HVR Software bv
 #
 ################################################################################
@@ -197,7 +197,7 @@ def env_var_print():
     """
     trace(3, "============================================")
     env = os.environ
-    for key, value  in env.iteritems():
+    for key, value  in env.items():
         if key.find('HVR') != -1:
             trace(3, key + " = " + value)
     trace(3, "============================================")
